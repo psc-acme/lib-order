@@ -1,0 +1,41 @@
+{
+    "name": "psc-acme/lib-order",
+    "description": "Package lib-order for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\LibOrder\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "carbon/carbon": "^3.0",
+        "symfony/uid": "^7.0",
+        "monolog/monolog": "^3.2.0",
+        "symfony/console": "^7.0",
+        "psc-acme/dispatcher-billing": "^1.0"
+    },
+    "require-dev": {
+        "webforge/object-asserter": "^2.0.0",
+        "phpstan/phpstan-symfony": "^1.0",
+        "infection/infection": "^0.27"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
